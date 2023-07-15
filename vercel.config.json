@@ -1,6 +1,5 @@
 {
-    "rewrites": [
-        { "source": "/api/:path(.*)", "destination": "http://lums.live/" },
-        { "source": "/(.*)", "destination": "/index.html" }
-    ]
+	"rewrites": [
+		{ "source": "/api/:match*", "destination": "http://lums.live/:match*" }
+	]
 }
