@@ -14,6 +14,7 @@ export const TasksProvider = ({ children }) => {
 				headers: {
 					"Content-Type": "application/json",
 				},
+				credentials: "include",
 				body: JSON.stringify({
 					content: task,
 				}),
@@ -45,6 +46,7 @@ export const TasksProvider = ({ children }) => {
 				headers: {
 					"Content-Type": "application/json",
 				},
+				credentials: "include",
 				body: JSON.stringify({
 					taskId: id,
 				}),
