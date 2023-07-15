@@ -1,5 +1,5 @@
 {
 	"rewrites": [
-		{ "source": "/api/:match*", "destination": "http://lums.live/:match*" }
+		{ "source": "/api/:match*", "destination": "http://lums.live/api/:match*" }
 	]
 }
