@@ -13,7 +13,7 @@ export const Login = () => {
 
 		const formData = Object.fromEntries(new FormData(e.target));
 
-		const response = await fetch("/api/user/login", {
+		const response = await fetch("https://lums.live/api/user/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

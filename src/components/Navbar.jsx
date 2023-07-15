@@ -6,7 +6,7 @@ export const Navbar = () => {
 	const { user, setUser } = useContext(UserContext);
 
 	const logoutHandler = async () => {
-		await fetch("/api/user/logout", {
+		await fetch("https://lums.live/api/user/logout", {
 			method: "POST",
 		});
 

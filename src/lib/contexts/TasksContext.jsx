@@ -9,7 +9,7 @@ export const TasksProvider = ({ children }) => {
 
 	const addTask = async (task) => {
 		try {
-			const response = await fetch("/api/task/create", {
+			const response = await fetch("https://lums.live/api/task/create", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -41,7 +41,7 @@ export const TasksProvider = ({ children }) => {
 
 	const removeTask = async (id) => {
 		try {
-			const response = await fetch("/api/task/delete", {
+			const response = await fetch("https://lums.live/api/task/delete", {
 				method: "DELETE",
 				headers: {
 					"Content-Type": "application/json",

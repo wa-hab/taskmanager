@@ -6,7 +6,7 @@ function App() {
 	const { addTask, setTasks } = useContext(TasksContext);
 
 	const getAllTasks = async () => {
-		const response = await fetch("/api/task/");
+		const response = await fetch("https://lums.live/api/task/");
 		const data = await response.json();
 
 		if (data.success) {
